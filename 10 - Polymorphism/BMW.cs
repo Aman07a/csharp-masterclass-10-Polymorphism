@@ -13,7 +13,7 @@ namespace _10___Polymorphism
 
         public BMW(int hp, string color, string model) : base(hp, color)
         {
-            Model = model;
+            this.Model = model;
         }
 
         public new void ShowDetails()
@@ -21,7 +21,7 @@ namespace _10___Polymorphism
             Console.WriteLine($"Brand: {brand}. Model: {Model}. HP: {HP}. Color: {Color}.");
         }
 
-        public override void Repair()
+        public sealed override void Repair()
         {
             Console.WriteLine("The BMW {0} was repaired.", Model);
         }
