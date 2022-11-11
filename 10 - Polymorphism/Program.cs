@@ -14,41 +14,49 @@ namespace _10___Polymorphism
         // Create the two methods ShowDetails() and Repair in them as well. Adjust those methods accordingly.
         static void Main(string[] args)
         {
-            // A car can be a BMW, an Audi, a Porsche etc.
-            // Polymorphism at work.
-            // #1: An Audi, BMW, Porsche can all be used wherever a Car is expected.
-            // No cast is required because an implicit conversion exists from a derived class to it's base class.
-            var cars = new List<Car>
-            {
-                new Audi(200, "blue", "A4"),
-                new BMW(250, "red", "M3"),
-            };
+            // // A car can be a BMW, an Audi, a Porsche etc.
+            // // Polymorphism at work.
+            // // #1: An Audi, BMW, Porsche can all be used wherever a Car is expected.
+            // // No cast is required because an implicit conversion exists from a derived class to it's base class.
+            // var cars = new List<Car>
+            // {
+            //     new Audi(200, "blue", "A4"),
+            //     new BMW(250, "red", "M3"),
+            // };
 
-            // Polymorphism at work.
-            // #2: The virtual method Repair is invoked on each of the derived classes, not the base class.
-            foreach(var car in cars)
-            {
-                car.Repair();
-            }
+            // // Polymorphism at work.
+            // // #2: The virtual method Repair is invoked on each of the derived classes, not the base class.
+            // foreach(var car in cars)
+            // {
+            //     car.Repair();
+            // }
 
-            Car bmwZ3 = new BMW(200, "Black", "Z3");
-            Car audiA3= new Audi(100, "Green", "A3");
-            bmwZ3.ShowDetails();
-            audiA3.ShowDetails();
+            // Car bmwZ3 = new BMW(200, "Black", "Z3");
+            // Car audiA3= new Audi(100, "Green", "A3");
+            // bmwZ3.ShowDetails();
+            // audiA3.ShowDetails();
 
-            bmwZ3.SetCarIDInfo(1234, "Denis");
-            audiA3.SetCarIDInfo(1235, "Aman");
-            bmwZ3.GetCarIDInfo();
-            audiA3.GetCarIDInfo();
+            // bmwZ3.SetCarIDInfo(1234, "Denis");
+            // audiA3.SetCarIDInfo(1235, "Aman");
+            // bmwZ3.GetCarIDInfo();
+            // audiA3.GetCarIDInfo();
 
-            BMW bmwM5 = new BMW(330, "White", "M5");
-            bmwM5.ShowDetails();
+            // BMW bmwM5 = new BMW(330, "White", "M5");
+            // bmwM5.ShowDetails();
 
-            Car carB = (Car)bmwM5;
-            carB.ShowDetails();
+            // Car carB = (Car)bmwM5;
+            // carB.ShowDetails();
 
-            M3 myM3 = new M3(260, "Red", "M3 Super Turbo");
-            myM3.Repair();
+            // M3 myM3 = new M3(260, "Red", "M3 Super Turbo");
+            // myM3.Repair();
+
+            // Shape[] shapes = { new Sphere(4), new Cube(3) };
+
+            // foreach (Shape shape in shapes)
+            // {
+            //     shape.GetInfo();
+            //     Console.WriteLine("{0} has a volume of {1}", shape.Name, shape.Volume());
+            // }
 
             Console.ReadKey();
         }
