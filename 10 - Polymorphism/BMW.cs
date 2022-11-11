@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace _10___Polymorphism
 {
+    // A BMW is a Car
     internal class BMW : Car
     {
         private string brand = "BMW";

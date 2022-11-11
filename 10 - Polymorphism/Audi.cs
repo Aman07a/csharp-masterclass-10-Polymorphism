@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace _10___Polymorphism
 {
+    // An Audi is a Car
     internal class Audi : Car
     {
         private string brand = "Audi";
@@ -17,7 +18,7 @@ namespace _10___Polymorphism
             Model = model;
         }
 
-        public new void ShowDetails()
+        public void ShowDetails()
         {
             Console.WriteLine($"Brand: {brand}. Model: {Model}. HP: {HP}. Color: {Color}.");
         }

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace _10___Polymorphism
 {
+    // A M3 is a BMW
     internal class M3 : BMW
     {
         public M3(int hp, string color, string model) : base(hp, color, model)

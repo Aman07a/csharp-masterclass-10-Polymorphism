@@ -36,6 +36,11 @@ namespace _10___Polymorphism
             bmwZ3.ShowDetails();
             audiA3.ShowDetails();
 
+            bmwZ3.SetCarIDInfo(1234, "Denis");
+            audiA3.SetCarIDInfo(1235, "Aman");
+            bmwZ3.GetCarIDInfo();
+            audiA3.GetCarIDInfo();
+
             BMW bmwM5 = new BMW(330, "White", "M5");
             bmwM5.ShowDetails();
 
